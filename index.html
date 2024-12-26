@@ -3,44 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>商品分類與單位數量</title>
+    <title>300w</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="container">
         <h1>商品分類</h1>
-        <a href="#" class="button" onclick="showCategory('category1')">商品類別 1</a>
-        <a href="#" class="button" onclick="showCategory('category2')">商品類別 2</a>
-        <a href="#" class="button" onclick="showCategory('category3')">商品類別 3</a>
+        <a href="#" class="button" onclick="showCategory('category1')">宣導品</a>
+        <a href="#" class="button" onclick="showCategory('category2')">拌手禮</a>
+        <a href="#" class="button" onclick="showCategory('category3')">摸彩品</a>
 
         <div id="category1" class="hidden">
-            <h2>商品類別 1 單位</h2>
-            <a href="#" class="button" onclick="showUnitTable('unit1')">單位 1</a>
-            <a href="#" class="button" onclick="showUnitTable('unit2')">單位 2</a>
-            <a href="#" class="button" onclick="showUnitTable('unit3')">單位 3</a>
-            <a href="#" class="button" onclick="showUnitTable('unit4')">單位 4</a>
-            <a href="#" class="button" onclick="showUnitTable('unit5')">單位 5</a>
-            <a href="#" class="button" onclick="showUnitTable('unit6')">單位 6</a>
+            <h2>宣導品 單位</h2>
+            <a href="#" class="button" onclick="showUnitTable('unit1')">地籍科</a>
+            <a href="#" class="button" onclick="showUnitTable('unit2')">地價及用地科</a>
+            <a href="#" class="button" onclick="showUnitTable('unit3')">國土管制科</a>
+            <a href="#" class="button" onclick="showUnitTable('unit4')">國土規劃科</a>
+            <a href="#" class="button" onclick="showUnitTable('unit5')">重劃科</a>
+            <a href="#" class="button" onclick="showUnitTable('unit6')">地籍測量科</a>
         </div>
 
         <div id="category2" class="hidden">
-            <h2>商品類別 2 單位</h2>
-            <a href="#" class="button" onclick="showUnitTable('unit7')">單位 1</a>
-            <a href="#" class="button" onclick="showUnitTable('unit8')">單位 2</a>
-            <a href="#" class="button" onclick="showUnitTable('unit9')">單位 3</a>
-            <a href="#" class="button" onclick="showUnitTable('unit10')">單位 4</a>
-            <a href="#" class="button" onclick="showUnitTable('unit11')">單位 5</a>
-            <a href="#" class="button" onclick="showUnitTable('unit12')">單位 6</a>
+            <h2>拌手禮 單位</h2>
+            <a href="#" class="button" onclick="showUnitTable('unit7')">地籍科</a>
+            <a href="#" class="button" onclick="showUnitTable('unit8')">地價及用地科</a>
+            <a href="#" class="button" onclick="showUnitTable('unit9')">國土管制科</a>
+            <a href="#" class="button" onclick="showUnitTable('unit10')">國土規劃科</a>
+            <a href="#" class="button" onclick="showUnitTable('unit11')">重劃科</a>
+            <a href="#" class="button" onclick="showUnitTable('unit12')">地籍測量科</a>
         </div>
 
         <div id="category3" class="hidden">
-            <h2>商品類別 3 單位</h2>
-            <a href="#" class="button" onclick="showUnitTable('unit13')">單位 1</a>
-            <a href="#" class="button" onclick="showUnitTable('unit14')">單位 2</a>
-            <a href="#" class="button" onclick="showUnitTable('unit15')">單位 3</a>
-            <a href="#" class="button" onclick="showUnitTable('unit16')">單位 4</a>
-            <a href="#" class="button" onclick="showUnitTable('unit17')">單位 5</a>
-            <a href="#" class="button" onclick="showUnitTable('unit18')">單位 6</a>
+            <h2>摸彩品 單位</h2>
+            <a href="#" class="button" onclick="showUnitTable('unit13')">地籍科</a>
+            <a href="#" class="button" onclick="showUnitTable('unit14')">地價及用地科</a>
+            <a href="#" class="button" onclick="showUnitTable('unit15')">國土管制科</a>
+            <a href="#" class="button" onclick="showUnitTable('unit16')">國土規劃科</a>
+            <a href="#" class="button" onclick="showUnitTable('unit17')">重劃科</a>
+            <a href="#" class="button" onclick="showUnitTable('unit18')">地籍測量科</a>
         </div>
 
         <div id="table-container" class="hidden">
@@ -56,7 +58,7 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>商品 1</td>
+                        <td>名稱</td>
                         <td>100</td>
                         <td>100</td>
                         <td>無</td>
@@ -66,7 +68,5 @@
             <input type="file" id="import-excel" class="import-btn" onchange="importExcel()">
         </div>
     </div>
-
-    <script src="script.js"></script>
 </body>
 </html>
