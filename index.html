@@ -11,58 +11,53 @@
 <body>
     <div class="container">
         <h1>商品分類</h1>
-        <a href="#" class="button" onclick="showCategory('category1')">宣導品</a>
-        <a href="#" class="button" onclick="showCategory('category2')">拌手禮</a>
-        <a href="#" class="button" onclick="showCategory('category3')">摸彩品</a>
+        <a href="#" class="button" onclick="showCategory('宣導品')">宣導品</a>
+        <a href="#" class="button" onclick="showCategory('拌手禮')">拌手禮</a>
+        <a href="#" class="button" onclick="showCategory('摸彩品')">摸彩品</a>
 
-        <div id="category1" class="hidden">
-            <h2>宣導品 單位</h2>
-            <a href="#" class="button" onclick="showUnitTable('unit1')">地籍科</a>
-            <a href="#" class="button" onclick="showUnitTable('unit2')">地價及用地科</a>
-            <a href="#" class="button" onclick="showUnitTable('unit3')">國土管制科</a>
-            <a href="#" class="button" onclick="showUnitTable('unit4')">國土規劃科</a>
-            <a href="#" class="button" onclick="showUnitTable('unit5')">重劃科</a>
-            <a href="#" class="button" onclick="showUnitTable('unit6')">地籍測量科</a>
+        <div id="宣導品" class="hidden">
+            <h2>宣導品 選擇單位</h2>
+            <a href="#" class="button" onclick="showUnitTable('地籍科')">地籍科</a>
+            <a href="#" class="button" onclick="showUnitTable('地價及用地科')">地價及用地科</a>
+            <a href="#" class="button" onclick="showUnitTable('國土管制科')">國土管制科</a>
+            <a href="#" class="button" onclick="showUnitTable('國土規劃科')">國土規劃科</a>
+            <a href="#" class="button" onclick="showUnitTable('重劃科')">重劃科</a>
+            <a href="#" class="button" onclick="showUnitTable('地籍測量科')">地籍測量科</a>
         </div>
 
-        <div id="category2" class="hidden">
-            <h2>拌手禮 單位</h2>
-            <a href="#" class="button" onclick="showUnitTable('unit7')">地籍科</a>
-            <a href="#" class="button" onclick="showUnitTable('unit8')">地價及用地科</a>
-            <a href="#" class="button" onclick="showUnitTable('unit9')">國土管制科</a>
-            <a href="#" class="button" onclick="showUnitTable('unit10')">國土規劃科</a>
-            <a href="#" class="button" onclick="showUnitTable('unit11')">重劃科</a>
-            <a href="#" class="button" onclick="showUnitTable('unit12')">地籍測量科</a>
+        <div id="拌手禮" class="hidden">
+            <h2>拌手禮 選擇單位</h2>
+            <a href="#" class="button" onclick="showUnitTable('地籍科')">地籍科</a>
+            <a href="#" class="button" onclick="showUnitTable('地價及用地科')">地價及用地科</a>
+            <a href="#" class="button" onclick="showUnitTable('國土管制科')">國土管制科</a>
+            <a href="#" class="button" onclick="showUnitTable('國土規劃科')">國土規劃科</a>
+            <a href="#" class="button" onclick="showUnitTable('重劃科')">重劃科</a>
+            <a href="#" class="button" onclick="showUnitTable('地籍測量科')">地籍測量科</a>
         </div>
 
-        <div id="category3" class="hidden">
-            <h2>摸彩品 單位</h2>
-            <a href="#" class="button" onclick="showUnitTable('unit13')">地籍科</a>
-            <a href="#" class="button" onclick="showUnitTable('unit14')">地價及用地科</a>
-            <a href="#" class="button" onclick="showUnitTable('unit15')">國土管制科</a>
-            <a href="#" class="button" onclick="showUnitTable('unit16')">國土規劃科</a>
-            <a href="#" class="button" onclick="showUnitTable('unit17')">重劃科</a>
-            <a href="#" class="button" onclick="showUnitTable('unit18')">地籍測量科</a>
+        <div id="摸彩品" class="hidden">
+            <h2>摸彩品 選擇單位</h2>
+            <a href="#" class="button" onclick="showUnitTable('地籍科')">地籍科</a>
+            <a href="#" class="button" onclick="showUnitTable('地價及用地科')">地價及用地科</a>
+            <a href="#" class="button" onclick="showUnitTable('國土管制科')">國土管制科</a>
+            <a href="#" class="button" onclick="showUnitTable('國土規劃科')">國土規劃科</a>
+            <a href="#" class="button" onclick="showUnitTable('重劃科')">重劃科</a>
+            <a href="#" class="button" onclick="showUnitTable('地籍測量科')">地籍測量科</a>
         </div>
 
-        <div id="table-container" class="hidden">
+        <div id="table-container" class="" data-category="">
             <h2>單位數量表格</h2>
             <table id="unit-table">
                 <thead>
                     <tr>
-                        <th>品項</th>
+                        <th>單位名稱</th>
                         <th>數量</th>
                         <th>單價</th>
                         <th>備註</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>名稱</td>
-                        <td>100</td>
-                        <td>100</td>
-                        <td>無</td>
-                    </tr>
+                    <!-- 表格數據動態生成 -->
                 </tbody>
             </table>
             <input type="file" id="import-excel" class="import-btn" onchange="importExcel()">
