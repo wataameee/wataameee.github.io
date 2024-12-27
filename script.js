@@ -95,6 +95,10 @@ function showUnitTable(unitName) {
         const tr = document.createElement('tr');
 
         // 只顯示品名、數量、單價和備註
+        const tdproject = document.createElement('td');
+        tdproject.textContent = row.project || '-';
+        tr.appendChild(tdproject);
+
         const tdItemName = document.createElement('td');
         tdItemName.textContent = row.itemName || '-';
         tr.appendChild(tdItemName);
