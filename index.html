@@ -10,33 +10,9 @@
 </head>
 <body>
     <div class="container">
-        <h1>商品分類</h1>
-        <a href="#" class="button" onclick="showCategory('宣導品')">宣導品</a>
-        <a href="#" class="button" onclick="showCategory('拌手禮')">拌手禮</a>
-        <a href="#" class="button" onclick="showCategory('摸彩品')">摸彩品</a>
 
-        <div id="宣導品" class="hidden">
-            <h2>宣導品 選擇單位</h2>
-            <a href="#" class="button" onclick="showUnitTable('地籍科')">地籍科</a>
-            <a href="#" class="button" onclick="showUnitTable('地價及用地科')">地價及用地科</a>
-            <a href="#" class="button" onclick="showUnitTable('國土管制科')">國土管制科</a>
-            <a href="#" class="button" onclick="showUnitTable('國土規劃科')">國土規劃科</a>
-            <a href="#" class="button" onclick="showUnitTable('重劃科')">重劃科</a>
-            <a href="#" class="button" onclick="showUnitTable('地籍測量科')">地籍測量科</a>
-        </div>
-
-        <div id="拌手禮" class="hidden">
-            <h2>拌手禮 選擇單位</h2>
-            <a href="#" class="button" onclick="showUnitTable('地籍科')">地籍科</a>
-            <a href="#" class="button" onclick="showUnitTable('地價及用地科')">地價及用地科</a>
-            <a href="#" class="button" onclick="showUnitTable('國土管制科')">國土管制科</a>
-            <a href="#" class="button" onclick="showUnitTable('國土規劃科')">國土規劃科</a>
-            <a href="#" class="button" onclick="showUnitTable('重劃科')">重劃科</a>
-            <a href="#" class="button" onclick="showUnitTable('地籍測量科')">地籍測量科</a>
-        </div>
-
-        <div id="摸彩品" class="hidden">
-            <h2>摸彩品 選擇單位</h2>
+        <div id="單位" >
+            <h2>選擇單位</h2>
             <a href="#" class="button" onclick="showUnitTable('地籍科')">地籍科</a>
             <a href="#" class="button" onclick="showUnitTable('地價及用地科')">地價及用地科</a>
             <a href="#" class="button" onclick="showUnitTable('國土管制科')">國土管制科</a>
@@ -46,10 +22,11 @@
         </div>
 
         <div id="table-container" class="" data-category="">
-            <h2>單位數量表格</h2>
+            <h2>項目數量</h2>
             <table id="unit-table">
                 <thead>
                     <tr>
+                        <th>項目</th>
                         <th>品項</th>
                         <th>數量</th>
                         <th>單價</th>
